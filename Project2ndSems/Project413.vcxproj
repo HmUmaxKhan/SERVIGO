@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AEF83D9D-627E-3F14-A54F-39F2C6382C98}</ProjectGuid>
+    <RootNamespace>Project413</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22000.0</WindowsTargetPlatformMinVersion>
+  <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Project413</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Project413</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" /><Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')"><Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." /></Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')"><Import Project="$(QtMsBuild)\qt_defaults.props" /></ImportGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><OutDir>debug\</OutDir><IntDir>debug\</IntDir><TargetName>Project413</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary></PropertyGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><OutDir>release\</OutDir><IntDir>release\</IntDir><TargetName>Project413</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary><LinkIncremental>false</LinkIncremental></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><QtInstall>6.5.0_msvc2019_64</QtInstall><QtModules>core;core-private;gui;gui-private;network;qml;qml-private;quick;quick-private;widgets;opengl;printsupport;quickwidgets;sql;webchannel;webenginecore;positioning;webenginewidgets;webenginequick</QtModules></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><QtInstall>6.5.0_msvc2019_64</QtInstall><QtModules>core;core-private;gui;gui-private;network;qml;qml-private;quick;quick-private;widgets;opengl;printsupport;quickwidgets;sql;webchannel;webenginecore;positioning;webenginewidgets;webenginequick</QtModules></PropertyGroup><ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')"><Import Project="$(QtMsBuild)\qt.props" /></ImportGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;release;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_LOCATION_LIB;QT_POSITIONINGQUICK_LIB;QT_QUICKSHAPES_LIB;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt6Location.lib;$(QTDIR)\lib\Qt6PositioningQuick.lib;$(QTDIR)\lib\Qt6QuickShapes.lib;$(QTDIR)\lib\Qt6QmlModels.lib;$(QTDIR)\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\Project413.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_LOCATION_LIB;QT_POSITIONINGQUICK_LIB;QT_QUICKSHAPES_LIB;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>$(Configuration)</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><NoZstd>true</NoZstd><Compression>default</Compression><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><QtRccDir>$(Configuration)</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc><QtUic><ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription><QtUicDir>$(ProjectDir)</QtUicDir><QtUicFileName>ui_%(Filename).h</QtUicFileName></QtUic></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_LOCATION_LIB;QT_POSITIONINGQUICK_LIB;QT_QUICKSHAPES_LIB;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt6Locationd.lib;$(QTDIR)\lib\Qt6PositioningQuickd.lib;$(QTDIR)\lib\Qt6QuickShapesd.lib;$(QTDIR)\lib\Qt6QmlModelsd.lib;$(QTDIR)\lib\Qt6EntryPointd.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Project413.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_LOCATION_LIB;QT_POSITIONINGQUICK_LIB;QT_QUICKSHAPES_LIB;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>$(Configuration)</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><Compression>default</Compression><NoZstd>true</NoZstd><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><QtRccDir>$(Configuration)</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc><QtUic><ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription><QtUicDir>$(ProjectDir)</QtUicDir><QtUicFileName>ui_%(Filename).h</QtUicFileName></QtUic></ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SignUp.cpp" />
+    <ClCompile Include="editsp.cpp" />
+    <ClCompile Include="editu.cpp" />
+    <ClCompile Include="googlemaps.cpp" />
+    <ClCompile Include="historysp.cpp" />
+    <ClCompile Include="historyuser.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="profilesp.cpp" />
+    <ClCompile Include="profileu.cpp" />
+    <ClCompile Include="regcomplete.cpp" />
+    <ClCompile Include="selection.cpp" />
+    <ClCompile Include="slogin.cpp" />
+    <ClCompile Include="spinter.cpp" />
+    <ClCompile Include="sql.cpp" />
+    <ClCompile Include="task1.cpp" />
+    <ClCompile Include="task_2.cpp" />
+    <ClCompile Include="ulogin.cpp" />
+    <ClCompile Include="userinter.cpp" />
+    <ClCompile Include="usignup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PolySP.h" />
+    <QtMoc Include="SignUp.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="editsp.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="editu.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="googlemaps.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="historysp.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="historyuser.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="profilesp.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="profileu.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="regcomplete.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="selection.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc;msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h;C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc;msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h;C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="slogin.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="spinter.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <ClInclude Include="sql.h" />
+    <QtMoc Include="task1.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="task_2.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="ulogin.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="userinter.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+    <QtMoc Include="usignup.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include><CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor><Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Project MSVC 3/Project413/$(Configuration)/moc_predefs.h</Include></QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -Zi -MDd -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -O2 -MD -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="SignUp.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="editsp.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="editu.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="googlemaps.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="historysp.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="historyuser.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="profilesp.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="profileu.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="regcomplete.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="selection.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="slogin.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="spinter.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="task1.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="task_2.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="ulogin.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="userinter.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+    <QtUic Include="usignup.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Background.png" />
+    <None Include="bG #3.png" />
+    <None Include="bG 2.png" />
+    <None Include="bG no arrows.png" />
+    <None Include="googlemap.html" />
+    <None Include="hmu logo.png" />
+    <QtRcc Include="myresource.qrc">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">myresource</InitFuncName><InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">myresource</InitFuncName></QtRcc>
+    <QtRcc Include="resources.qrc">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">resources</InitFuncName><InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">resources</InitFuncName></QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="googlemap.html" />
+    <None Include="hmu" />
+    <None Include="logo.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')"><Import Project="$(QtMsBuild)\qt.targets" /></ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

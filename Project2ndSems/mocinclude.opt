@@ -1,0 +1,42 @@
+-IC:/QT/6.5.0/MSVC2019_64/mkspecs/win32-msvc
+-IC:/Project MSVC 3/Project413
+-IC:/QT/6.5.0/MSVC2019_64/include
+-IC:/QT/6.5.0/MSVC2019_64/include/QtLocation
+-IC:/QT/6.5.0/MSVC2019_64/include/QtPositioningQuick
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQuickShapes
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQuickShapes/6.5.0
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQuickShapes/6.5.0/QtQuickShapes
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQuick/6.5.0
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQuick/6.5.0/QtQuick
+-IC:/QT/6.5.0/MSVC2019_64/include/QtWebEngineWidgets
+-IC:/QT/6.5.0/MSVC2019_64/include/QtWebEngineCore
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQuickWidgets
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQuick
+-IC:/QT/6.5.0/MSVC2019_64/include/QtOpenGL
+-IC:/QT/6.5.0/MSVC2019_64/include/QtGui/6.5.0
+-IC:/QT/6.5.0/MSVC2019_64/include/QtGui/6.5.0/QtGui
+-IC:/QT/6.5.0/MSVC2019_64/include/QtPrintSupport
+-IC:/QT/6.5.0/MSVC2019_64/include/QtWidgets
+-IC:/QT/6.5.0/MSVC2019_64/include/QtGui
+-IC:/QT/6.5.0/MSVC2019_64/include/QtSql
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQmlModels/6.5.0
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQmlModels/6.5.0/QtQmlModels
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQmlModels
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQml/6.5.0
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQml/6.5.0/QtQml
+-IC:/QT/6.5.0/MSVC2019_64/include/QtWebChannel
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQml
+-IC:/QT/6.5.0/MSVC2019_64/include/QtNetwork
+-IC:/QT/6.5.0/MSVC2019_64/include/QtPositioning
+-IC:/QT/6.5.0/MSVC2019_64/include/QtQmlIntegration
+-IC:/QT/6.5.0/MSVC2019_64/include/QtCore/6.5.0
+-IC:/QT/6.5.0/MSVC2019_64/include/QtCore/6.5.0/QtCore
+-IC:/QT/6.5.0/MSVC2019_64/include/QtCore
+-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include
+-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include
+-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include
+-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt
+-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um
+-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared
+-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt
+-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
